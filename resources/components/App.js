@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 
-import Welcome from './Welcome'
+// import Welcome from './Welcome'
+import Home from '../pages/Home'
 
 const App = () => {
     return (
-        <Welcome />
+        <Home />
     );
 };
 

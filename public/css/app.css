@@ -28642,3 +28642,7 @@ div.ant-typography-edit-content.ant-typography-rtl {
 body {
   background-color: #011127;
 }
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: rgba(24, 144, 255, 0);
+}

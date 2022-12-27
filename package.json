@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "antd": "^5.1.0",
+        "framer-motion": "^8.0.2",
         "styled-components": "^5.1.1"
     }
 }

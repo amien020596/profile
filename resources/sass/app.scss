@@ -9,9 +9,10 @@
 // @import '~bootstrap/scss/bootstrap';
 
 
-
-
 // Customer scss
 body{
   background-color:#011127;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected{
+  background-color: #1890ff00;
 }
