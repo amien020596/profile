@@ -1,7 +1,7 @@
 import react from 'react';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import { Breadcrumb, Layout, Menu, theme, Image, Col, Row } from 'antd';
 const { Header, Content, Footer } = Layout;
-
+import { motion } from "framer-motion"
 const Home = () => {
   const {
     token: { colorBgContainer },
@@ -52,7 +52,27 @@ const Home = () => {
       ],
     }
   ];
-
+  const container = {
+    show: {
+      transition: {
+        staggerChildren: 0.35,
+      },
+    },
+  };
+  const item={
+    hidden:{
+      opacity:0,
+      y:200
+    },
+    show:{
+      opacity:1,
+      y:0,
+      transition:{
+        ease:[0.555, 0.115, 0.330, 0.800],
+        duration:1.6
+      } 
+    }
+  }
   return (
     <Layout>
     <Header
@@ -68,10 +88,9 @@ const Home = () => {
           float: 'left',
           width: '17rem',
           color: 'rgb(232 232 232)',
-          fontWeight: 800,
+          fontWeight: 600,
           fontSize:20,
-          textTransform: 'uppercase',
-          letterSpacing: '3px'
+          letterSpacing: '2px'
         }}
       >Amien Kurniawan.</div>
       <Menu
@@ -81,31 +100,76 @@ const Home = () => {
         items={menus}
       />
     </Header>
+    
     <Content
       className="site-layout"
       style={{
         padding: '0 50px',
       }}
     >
-      <Breadcrumb
-        style={{
-          margin: '16px 0',
-        }}
-      >
-        <Breadcrumb.Item>Home</Breadcrumb.Item>
-        <Breadcrumb.Item>List</Breadcrumb.Item>
-        <Breadcrumb.Item>App</Breadcrumb.Item>
-      </Breadcrumb>
       <div
         style={{
           padding: 24,
           minHeight: 380,
           background: colorBgContainer,
+          color:colorBgContainer,
+          fontSize:'4rem'
         }}
       >
-        Content
+        <motion.div
+        variants={container}
+        initial='hidden'
+        animate='show'>      
+            <motion.div variants={item}>
+            <h2 >
+              Hi, I'm Amien
+            </h2>
+            </motion.div>
+         
+            <motion.div variants={item}>
+            <h2>
+              I'm Programmer with Strong Focus on
+            </h2>
+            </motion.div>
+            <motion.div variants={item}>
+              <h2>
+                Problem Solving & Passionate to
+              </h2>
+            </motion.div>
+            <motion.div variants={item}>
+              <h2>
+                 Create Something Awesome.
+              </h2>
+            </motion.div>
+        </motion.div>
       </div>
     </Content>
+    <Content
+      className="site-layout"
+      style={{
+        padding: '0 0',
+      }}
+    >
+      <div
+        style={{
+          minHeight: 380,
+          background: colorBgContainer,
+          color:colorBgContainer,
+          fontSize:'4rem'
+        }}
+      >
+      <Row>
+        <Col span={12}>
+          <Image
+            width={"100%"}
+            preview={false}
+            src={`http://profile.test/storage/first-lake-alberta-canada-wallpaper-for-1920x1080-63-251.jpg`}
+          />
+        </Col>
+        <Col span={12}>col-12</Col>
+      </Row>
+    </div>
+      </Content>
     <Footer
       style={{
         textAlign: 'center',
