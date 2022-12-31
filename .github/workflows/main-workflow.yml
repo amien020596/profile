@@ -26,9 +26,9 @@ jobs:
     - name: Generate Key
       run: php artisan key:generate
 
-    - uses: actions/setup-node@master
-    - name: Installing project dependencies
-      run: npm install
+    # - uses: actions/setup-node@master
+    # - name: Installing project dependencies
+    #   run: npm install
 
     # - name: Building the project
     #   run: npm run production
