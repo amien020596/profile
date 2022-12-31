@@ -42,7 +42,7 @@ jobs:
         server: novara.id.domainesia.com
         username: ${{secrets.ftp_username}}
         password: ${{secrets.ftp_password}}
-        server-dir: /
+        server-dir: /public_html
         exclude: |
           **/.git*
           **/.git*/**
