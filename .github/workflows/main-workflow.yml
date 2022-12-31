@@ -30,8 +30,8 @@ jobs:
     - name: Installing project dependencies
       run: npm install
 
-    - name: Building the project
-      run: npm run production
+    # - name: Building the project
+    #   run: npm run production
 
     # - name: Execute tests
     #   run: vendor/bin/phpunit
@@ -42,7 +42,7 @@ jobs:
         server: novara.id.domainesia.com
         username: ${{secrets.ftp_username}}
         password: ${{secrets.ftp_password}}
-        server-dir: /studio2/
+        server-dir: /public_html/
         exclude: |
           **/.git*
           **/.git*/**
