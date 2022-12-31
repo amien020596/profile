@@ -5,8 +5,11 @@ AddHandler application/x-httpd-php71 .php
         Options -MultiViews -Indexes
     </IfModule>
 
-    RewriteEngine On
-    RewriteRule ^(.*)$ /public/$1 [L]
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^akdevstudios.com$ [NC,OR]
+    RewriteCond %{HTTP_HOST} ^www.akdevstudios.com$
+    RewriteCond %{REQUEST_URI} !public/
+    RewriteRule (.*) /public/$1 [L]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
