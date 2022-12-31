@@ -7,10 +7,15 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    php_version: 7.1
+    
     steps:
     - name: get latest code
       uses: actions/checkout@v2
+    
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: 7.1
 
     - name: Install Dependencies
       run: composer install
