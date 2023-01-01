@@ -15,40 +15,19 @@ const Home = () => {
     {
       label: 'Experience & Education',
       key: 'education',
-      disabled: false,
     },
     {
       label: 'Portfolio',
       key: 'SubMenu',
       children: [
         {
-          type: 'group',
-          label: 'Item 1',
-          children: [
-            {
-              label: 'Option 1',
-              key: 'setting:1',
-            },
-            {
-              label: 'Option 2',
-              key: 'setting:2',
-            },
-          ],
+          label: 'Option 1',
+          key: 'setting:1',
         },
         {
-          type: 'group',
-          label: 'Item 2',
-          children: [
-            {
-              label: 'Option 3',
-              key: 'setting:3',
-            },
-            {
-              label: 'Option 4',
-              key: 'setting:4',
-            },
-          ],
-        },
+          label: 'Option 2',
+          key: 'setting:2',
+        }
       ],
     }
   ];
@@ -81,21 +60,25 @@ const Home = () => {
         top: 0,
         zIndex: 1,
         width: '100%',
+        backgroundColor:'#f0f2f5'
       }}
     >
       <div
         style={{
           float: 'left',
           width: '17rem',
-          color: 'rgb(232 232 232)',
+          color: 'rgb(0 0 0)',
           fontWeight: 600,
           fontSize:20,
           letterSpacing: '2px'
         }}
       >Amien Kurniawan.</div>
       <Menu
+        style={{backgroundColor:'#f0f2f5'}}
         theme="dark"
         mode="horizontal"
+        forceSubMenuRender={true}
+        subMenuCloseDelay='100'
         defaultSelectedKeys={['Home']}
         items={menus}
       />
@@ -166,10 +149,32 @@ const Home = () => {
             src={`storage/first-lake-alberta-canada.jpg`}
           />
         </Col>
-        <Col span={12}>
-        
-
-
+        <Col span={12} style={{backgroundColor:'#f0f2f5'}}>
+        <div className="outter octagon-outter1">
+          <p>OCTAGON</p>
+          <div className="inner octagon-inner1">
+          </div>
+        </div>
+        <div className="outter octagon-outter2">
+          <p>OCTAGON2</p>
+          <div className="inner octagon-inner2">
+          </div>
+        </div>
+        <div className="outter octagon-outter3">
+          <p>OCTAGON3</p>
+          <div className="inner octagon-inner3">
+          </div>
+        </div>
+        <div className="outter octagon-outter4">
+          <p>OCTAGON3</p>
+          <div className="inner octagon-inner4">
+          </div>
+        </div>
+        <div className="outter octagon-outter5">
+          <p>OCTAGON3</p>
+          <div className="inner octagon-inner5">
+          </div>
+        </div>
         </Col>
       </Row>
     </div>

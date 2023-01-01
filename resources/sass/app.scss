@@ -13,6 +13,139 @@
 body{
   background-color:#011127;
 }
+
 .ant-menu.ant-menu-dark .ant-menu-item-selected{
-  background-color: #1890ff00;
+  background-color: #f0f2f5 !important;
+}
+.ant-menu-dark.ant-menu-submenu > .ant-menu{
+  background-color: rgb(255 255 255 / 0%);
+  padding-left: 6px;
+}
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu{
+  color: #3b3434;
+}
+
+.ant-menu-dark .ant-menu-item{
+  color: #3b3434;
+}
+
+.ant-menu-dark.ant-menu-submenu>.ant-menu{
+  background-color: rgb(240, 242, 245);
+}
+
+.ant-menu-dark .ant-menu-item-group-title{
+  color: #3b3434;
+}
+.octagon-outter1{
+  position: absolute;
+  top: 100px;
+  left: 5%;
+}
+.octagon-inner1{
+  position: absolute;
+  top: 0px;
+}
+.octagon-outter2{
+  position: absolute;
+  top: 205px;
+  left: 16%;
+}
+.octagon-inner2{
+  position: absolute;
+  top: 0px;
+}
+.octagon-outter3{
+  position: absolute;
+  top: 100px;
+  left: 27%;
+}
+.octagon-inner3{
+  position: absolute;
+  top: 0px;
+}
+.octagon-outter4{
+  position: absolute;
+  top: 204px;
+  left: 38%;
+}
+.octagon-inner4{
+  position: absolute;
+  top: 0px;
+}
+.octagon-outter5{
+  position: absolute;
+  top: 308px;
+  left: 49%;
+}
+.octagon-inner5{
+  position: absolute;
+  top: 0px;
+}
+.outter {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.outter:before,
+.outter:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 2px;
+  
+  height: 86px;
+  margin-top: -41px;
+  z-index: 1;
+}
+
+.outter:after {
+  left: auto;
+  right: 0;
+  margin-top: -45px;
+  height: 92px;
+}
+
+.inner {
+  width: 150px;
+  height: 150px;
+  background: rgba(45,45,45,.25);
+  border-width: 2px;
+  border-style: solid;
+  -webkit-transform: rotate(45deg);
+}
+
+.inner:before,
+.inner:after {
+  -webkit-transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  width: 2px;
+  
+  height: 85px;
+  margin-top: -41px;
+  z-index: 1;
+  right: auto;
+  left: 27px;
+  bottom: auto;
+  top: 27px;
+}
+
+.inner:after {
+  height: 90px;
+  right: 30px;
+  left: auto;
+  bottom: -13px;
+  top: auto;
+}
+
+.outter p {
+  text-align: center;
+  line-height: 145px;
+  position: relative;
+  z-index: 10;
+  font-size: 30px;
+  font-weight: bold;
 }
