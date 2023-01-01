@@ -163,10 +163,14 @@ const Home = () => {
           <Image
             width={"100%"}
             preview={false}
-            src={`http://profile.test/storage/first-lake-alberta-canada-wallpaper-for-1920x1080-63-251.jpg`}
+            src={`storage/first-lake-alberta-canada.jpg`}
           />
         </Col>
-        <Col span={12}>col-12</Col>
+        <Col span={12}>
+        
+
+
+        </Col>
       </Row>
     </div>
       </Content>
