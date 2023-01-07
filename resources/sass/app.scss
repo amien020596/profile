@@ -18,15 +18,18 @@ body{
   background-color: #f0f2f5 !important;
 }
 .ant-menu-dark.ant-menu-submenu > .ant-menu{
-  background-color: rgb(255 255 255 / 0%);
+  background-color: $primaryColorOne;
   padding-left: 6px;
 }
+.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):active{
+  background-color:  $primaryColorTwo;
+}
 .ant-menu-dark.ant-menu-horizontal > .ant-menu-submenu{
-  color: #3b3434;
+  color: $primaryColorThree;
 }
 
 .ant-menu-dark .ant-menu-item{
-  color: #3b3434;
+  color: $primaryColorThree;
 }
 
 .ant-menu-dark.ant-menu-submenu>.ant-menu{
@@ -34,7 +37,7 @@ body{
 }
 
 .ant-menu-dark .ant-menu-item-group-title{
-  color: #3b3434;
+  color: $primaryColorThree;
 }
 .octagon-outter1{
   position: absolute;

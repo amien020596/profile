@@ -104,25 +104,25 @@ const Home = () => {
         initial='hidden'
         animate='show'>      
             <motion.div variants={item}>
-            <h2 >
+            <h3 style={{marginBottom:0}}>
               Hi, I'm Amien
-            </h2>
+            </h3>
             </motion.div>
          
             <motion.div variants={item}>
-            <h2>
+            <h3 style={{marginBottom:0}}>
               I'm Programmer with Strong Focus on
-            </h2>
+            </h3>
             </motion.div>
             <motion.div variants={item}>
-              <h2>
+              <h3 style={{marginBottom:0}}>
                 Problem Solving & Passionate to
-              </h2>
+              </h3>
             </motion.div>
             <motion.div variants={item}>
-              <h2>
+              <h3 style={{marginBottom:0}}>
                  Create Something Awesome.
-              </h2>
+              </h3>
             </motion.div>
         </motion.div>
       </div>
@@ -151,27 +151,27 @@ const Home = () => {
         </Col>
         <Col span={12} style={{backgroundColor:'#f0f2f5'}}>
         <div className="outter octagon-outter1">
-          <p>OCTAGON</p>
+          <p>Laravel</p>
           <div className="inner octagon-inner1">
           </div>
         </div>
         <div className="outter octagon-outter2">
-          <p>OCTAGON2</p>
+          <p>Javascript</p>
           <div className="inner octagon-inner2">
           </div>
         </div>
         <div className="outter octagon-outter3">
-          <p>OCTAGON3</p>
+          <p>React Js</p>
           <div className="inner octagon-inner3">
           </div>
         </div>
         <div className="outter octagon-outter4">
-          <p>OCTAGON3</p>
+          <p>Python</p>
           <div className="inner octagon-inner4">
           </div>
         </div>
         <div className="outter octagon-outter5">
-          <p>OCTAGON3</p>
+          <p>PHP</p>
           <div className="inner octagon-inner5">
           </div>
         </div>
